@@ -74,46 +74,47 @@ void setDirectionOutputPortB() {
   Wire.endTransmission(); 
 }
 
+/*
 void front_motorStop() {
-  Wire.beginTransmission(0x20);  
+  Wire.beginTransmission(MCP23017);  
   Wire.write(0x12);              
   Wire.write(0x00); 
   Wire.endTransmission();
 }
 void back_motorStop() {
-  Wire.beginTransmission(0x20);  
+  Wire.beginTransmission(MCP23017);  
   Wire.write(0x13);              
   Wire.write(0x00); 
   Wire.endTransmission();
 }
 
 void front_motorForward() {
-  Wire.beginTransmission(0x20);  
+  Wire.beginTransmission(MCP23017);  
   Wire.write(0x12);              
   Wire.write(0xA0); 
   Wire.endTransmission();
 }
 void back_motorForward() {
-  Wire.beginTransmission(0x20);  
+  Wire.beginTransmission(MCP23017);  
   Wire.write(0x13);              
   Wire.write(0xA0); 
   Wire.endTransmission();
 }
 
 void front_motorTurnleft() {
-  Wire.beginTransmission(0x20);  
+  Wire.beginTransmission(MCP23017);  
   Wire.write(0x12);              
   Wire.write(0x10); 
   Wire.endTransmission();
 }
 
 void back_motorTurnleft() {
-  Wire.beginTransmission(0x20);  
+  Wire.beginTransmission(MCP23017);  
   Wire.write(0x12);              
   Wire.write(0x10); 
   Wire.endTransmission();
 }
-
+*/
 
 void setup() {
   Serial.begin(115200);
