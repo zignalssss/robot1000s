@@ -11,7 +11,7 @@
 //End import Library
 
 //Define Global Variable SECTION (preprocessor)
-#define MQTT_SERVER "20.2.222.63"
+#define MQTT_SERVER "ํYOUR_PUBLIC_IP"
 #define MQTT_PORT 1883
 #define MQTT_USERNAME ""
 #define MQTT_PASSWORD ""
@@ -172,7 +172,7 @@ void setup() {
   //MQTT Setup Section
   Serial.print("Connecting to ");
   WiFi.mode(WIFI_STA);
-  WiFi.begin("zigzigbotbot", "123456;)");
+  WiFi.begin("Wifi", " wifipassword");
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
